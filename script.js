@@ -116,7 +116,7 @@ Complete the exercise in the space below:
 
 function maxOfThree(num1, num2, num3) {
     // assign first value
-    var largerNum = num1;
+    let largerNum = num1;
     // check if 2nd value is a bigger number
     if (num2 > largerNum) {
         largerNum = num2;
@@ -146,7 +146,7 @@ Complete the exercise in the space below:
 
 function calculateTip(bill, tip) { // tip value should be percentage
     // variables
-    var tipAmount;
+    let tipAmount;
     // calculate tip
     tipAmount = bill * (tip / 100);
     // return tip value
@@ -200,7 +200,7 @@ Complete the exercise in the space below:
 */
 
 function basicCalculator(num1, num2, op) {
-    var result;
+    let result;
     switch (op)
     {
         case 'add':
