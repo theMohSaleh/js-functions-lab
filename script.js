@@ -79,9 +79,7 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-function generateEmail(name, domain) {
-    return (`${name}@${domain}`);
-}
+const generateEmail = (name, domain) => `${name}@${domain}`
 
 console.log('Exercise 4 Result:', generateEmail("johnsmith", "example.com"));
 
@@ -97,9 +95,7 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-function greetUser(name, time) {
-    return (`Good ${time}, ${name}!`);
-}
+const greetUser = (name, time) => `Good ${time}, ${name}!`
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
@@ -201,20 +197,19 @@ Complete the exercise in the space below:
 
 function basicCalculator(num1, num2, op) {
     let result;
-    switch (op)
-    {
+    switch (op) {
         case 'add':
-            result = num1+num2;
-        break;
+            result = num1 + num2;
+            break;
         case 'subtract':
-            result = num1-num2;
-        break;
+            result = num1 - num2;
+            break;
         case 'multiply':
-            result = num1*num2;
-        break;
+            result = num1 * num2;
+            break;
         case 'divide':
-            result = num1/num2;
-        break;
+            result = num1 / num2;
+            break;
         default:
             return "unknown operator";
     }
